@@ -1,0 +1,32 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$package\
+$nodejs\
+$rust\
+$dart\
+$time\
+$cmd_duration\
+$line_break\
+$jobs\
+$status\
+$character
+"""
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
+vicmd_symbol = "[V](bold green)"
+
+[status]
+disabled = false
+format = "[$symbol $status ]($style)"
+
+[time]
+disabled = false
