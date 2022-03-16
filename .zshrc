@@ -73,4 +73,9 @@ alias ypush="yadm push"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+
+# cargo
 export PATH=$PATH:/home/zorin/.cargo/bin
+
+source /opt/miniconda/etc/profile.d/conda.sh
+conda activate py39
