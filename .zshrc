@@ -71,6 +71,9 @@ alias ya="yadm add"
 alias ycmsg="yadm commit -m"
 alias ypush="yadm push"
 
+# suspend
+alias usl="systemctl suspend"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 

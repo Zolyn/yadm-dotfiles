@@ -23,7 +23,7 @@ font pango:Source Code Pro 8
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-# exec_always --no-startup-id xss-lock -l -- multilockscreen --lock blur &
+exec_always --no-startup-id xss-lock -- bash ~/MyFiles/projects/dotfiles/i3lock/lock.sh
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -56,7 +56,6 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh --shapes
 exec --no-startup-id ~/MyFiles/projects/dotfiles/scripts/init.sh
 exec --no-startup-id flameshot
 exec --no-startup-id numlockx on
-exec xautolock -detectsleep -time 15 -locker "bash ~/MyFiles/projects/dotfiles/i3lock/lock.sh"
 
 # Utools
 for_window [class="utools"] floating enable
