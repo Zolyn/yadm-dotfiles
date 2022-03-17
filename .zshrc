@@ -59,7 +59,7 @@ zi wait lucid for \
 alias cpuinfo='sudo cpupower -c all frequency-info'
 alias cpuperf='sudo cpupower -c all frequency-set -g performance'
 alias cpusave='sudo cpupower -c all frequency-set -g powersave'
-alias vwp='~/MyFiles/projects/i3-video-wallpaper/start.sh'
+alias vwp='nohup bash ~/MyFiles/projects/i3-video-wallpaper/setup.sh -p ~/视频/早凉_晚安.mp4 > ~/log/vwp.out &'
 alias clash='nohup clash > ~/log/clash.out &'
 
 alias ra='ranger'
