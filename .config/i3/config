@@ -123,7 +123,7 @@ bindsym $mod+d --release exec --no-startup-id rofi -show drun
 bindsym $mod+bracketleft --release exec bash ~/MyFiles/projects/dotfiles/i3lock/lock.sh
 
 # powermenu
-bindsym $mod+bracketright --release exec bash ~/.config/polybar/shapes/scripts/powermenu.sh
+bindsym $mod+bracketright --release exec bash ~/.config/polybar/scripts/powermenu.sh
 
 # change focus
 bindsym $mod+j focus left

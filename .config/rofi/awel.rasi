@@ -15,7 +15,7 @@ configuration {
   fake-transparency: false;
   hide-scrollbar: true;
   bw: 0;
-  terminal: "termite";
+  terminal: "alacritty";
   sidebar-mode: false;
 }
 
