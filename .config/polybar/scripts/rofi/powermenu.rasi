@@ -36,7 +36,7 @@ window {
 
 prompt {
     enabled: 						true;
-	padding: 						10px 55px 10px 15px;
+	padding: 						10px 160px 10px 15px;
 	background-color: 				@bg2;
 	text-color: 					@txt;
 	font:							"Iosevka Nerd Font 10";
