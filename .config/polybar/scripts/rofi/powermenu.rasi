@@ -36,8 +36,8 @@ window {
 
 prompt {
     enabled: 						true;
-	padding: 						10px 160px 10px 15px;
-	background-color: 				@bg2;
+    padding:                        10px 15px 10px 15px;
+	background-color: 				@al;
 	text-color: 					@txt;
 	font:							"Iosevka Nerd Font 10";
 }
@@ -45,7 +45,7 @@ prompt {
 textbox-prompt-colon {
 	padding: 						10px 15px 10px 15px;
 	font:							"Iosevka Nerd Font 10";
-	background-color: 				@bg1;
+	background-color: 				@al;
 	text-color: 					@txt;
 	expand: false;
 	str: "";
@@ -65,7 +65,7 @@ entry {
 
 inputbar {
 	children: 						[ textbox-prompt-colon, prompt ];
-    background-color:               @bg2;
+    background-color:               @bg1;
     text-color:                     #FFFFFF;
     expand:                         false;
 	border:							0px;
