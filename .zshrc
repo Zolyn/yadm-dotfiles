@@ -60,6 +60,7 @@ alias cpuinfo='sudo cpupower -c all frequency-info'
 alias cpuperf='sudo cpupower -c all frequency-set -g performance'
 alias cpusave='sudo cpupower -c all frequency-set -g powersave'
 alias vwp='nohup bash ~/MyFiles/projects/i3-video-wallpaper/setup.sh -p ~/视频/光_对立.mp4 -a -n -w -b -g 32x32 > ~/log/vwp.out &'
+alias k="k -h"
 # alias clash='nohup clash > ~/log/clash.out &'
 
 alias ra='ranger'
