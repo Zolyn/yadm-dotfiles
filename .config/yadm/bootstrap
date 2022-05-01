@@ -1,0 +1,37 @@
+#!/bin/bash
+log() {
+  echo "[YADM:bootstrap] $1"
+}
+
+log "Installing i3-gaps"
+paru -S i3-gaps i3lock-color --noconfirm
+
+log "Installing picom"
+paru -S picom-git --noconfirm
+
+log "Installing polybar"
+paru -S polybar --noconfirm
+
+log "Installing rofi"
+paru -S rofi --noconfirm
+
+log "Installing zsh"
+paru -S zsh zsh-completions --noconfirm
+
+log "Installing autojump"
+paru -S autojump --noconfirm
+
+log "Installing Zinit"
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+
+log "Changing default shell"
+chsh -s /usr/bin/zsh
+
+log "Installing themes"
+paru -S arc-gtk-theme arc-icon-theme --noconfirm
+
+log "Installing Apples San Francisco typeface family"
+paru -S otf-apple-sf-pro --noconfirm
+
+log "Installing Nodejs development environment"
+paru -S nodejs-lts-gallium npm --noconfirm
