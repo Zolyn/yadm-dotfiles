@@ -28,10 +28,15 @@ log "Changing default shell"
 chsh -s /usr/bin/zsh
 
 log "Installing themes"
-paru -S arc-gtk-theme arc-icon-theme --noconfirm
+paru -S arc-gtk-theme arc-icon-theme papirus-icon-theme --noconfirm
 
 log "Installing Apples San Francisco typeface family"
 paru -S otf-apple-sf-pro --noconfirm
 
+log "Installing GNOME polkit"
+paru -S polkit polkit-gnome --noconfirm
+
 log "Installing Nodejs development environment"
-paru -S nodejs-lts-gallium npm --noconfirm
+paru -S nodejs-lts-gallium npm pnpm yarn --noconfirm
+
+log "Done"
