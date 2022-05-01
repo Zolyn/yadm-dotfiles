@@ -3,6 +3,11 @@ log() {
   echo "[YADM:bootstrap] $1"
 }
 
+log "Configuring git"
+git config --global user.name "Zolyn"
+git config --global user.email "zorin1477@gmail.com"
+git config --global core.autocrlf input
+
 log "Installing i3-gaps"
 paru -S i3-gaps i3lock-color --noconfirm
 
@@ -30,14 +35,14 @@ chsh -s /usr/bin/zsh
 log "Installing themes"
 paru -S arc-gtk-theme arc-icon-theme papirus-icon-theme qt5ct lxappearance --noconfirm
 
-log "Installing Apples San Francisco typeface family"
-paru -S otf-apple-sf-pro --noconfirm
-
 log "Installing GNOME polkit"
 paru -S polkit polkit-gnome --noconfirm
 
 log "Installing Nodejs development environment"
 paru -S nodejs-lts-gallium npm pnpm yarn --noconfirm
+
+log "Installing Apples San Francisco typeface family"
+paru -S otf-apple-sf-pro --noconfirm
 
 log "Install deadd notification center"
 paru -S deadd-notification-center-git --noconfirm
