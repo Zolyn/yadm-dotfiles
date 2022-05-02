@@ -44,6 +44,9 @@ chsh -s /usr/bin/zsh
 log "Installing themes"
 paru -S arc-gtk-theme arc-icon-theme papirus-icon-theme tela-icon-theme-git qt5ct lxappearance --noconfirm
 
+log "Installing fonts"
+paru -S otf-font-awesome ttf-dejavu ttf-nerd-fonts-symbols ttf-wps-fonts
+
 log "Installing GNOME polkit"
 paru -S polkit polkit-gnome --noconfirm
 
