@@ -26,9 +26,11 @@ paru -S picom-git --noconfirm
 log "Installing polybar"
 paru -S polybar --noconfirm
 
-log "Installing pkgfile"
-paru -S pkgfile --noconfirm
+log "Installing script dependencies"
+paru -S pkgfile pacman-contrib --noconfirm
 pkgfile --update
+
+paru -S playerctl python-dbus python-gobject python-gi --noconfirm
 
 log "Installing rofi"
 paru -S rofi --noconfirm
