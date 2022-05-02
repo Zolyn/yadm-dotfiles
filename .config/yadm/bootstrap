@@ -14,6 +14,9 @@ paru -S lightdm-webkit-theme-osmos --noconfirm
 log "Setting up LightDM service"
 sudo systemctl enable lightdm
 
+log "Installing alacritty"
+paru -S alacritty --noconfirm
+
 log "Installing i3-gaps"
 paru -S i3-gaps i3lock-color --noconfirm
 
@@ -50,7 +53,7 @@ paru -S nodejs-lts-gallium npm pnpm yarn --noconfirm
 #log "Installing Apples San Francisco typeface family"
 #paru -S otf-apple-sf-pro --noconfirm
 
-log "Install deadd notification center"
-paru -S deadd-notification-center-git --noconfirm
+#log "Install deadd notification center"
+#paru -S deadd-notification-center-git --noconfirm
 
 log "Done"
