@@ -26,6 +26,10 @@ paru -S picom-git --noconfirm
 log "Installing polybar"
 paru -S polybar --noconfirm
 
+log "Installing pkgfile"
+paru -S pkgfile --noconfirm
+pkgfile --update
+
 log "Installing rofi"
 paru -S rofi --noconfirm
 
