@@ -30,7 +30,7 @@ log "Installing script dependencies"
 paru -S pkgfile pacman-contrib --noconfirm
 pkgfile --update
 
-paru -S playerctl python-dbus python-gobject python-gi --noconfirm
+paru -S playerctl python-dbus python-gobject gobject-introspection-runtime --noconfirm
 
 log "Installing rofi"
 paru -S rofi --noconfirm
