@@ -64,6 +64,7 @@ alias k="k -h"
 # alias clash='nohup clash > ~/log/clash.out &'
 
 alias ra='ranger'
+alias ls='exa'
 alias l='exa'
 
 # yadm
@@ -79,7 +80,7 @@ alias usl="systemctl suspend"
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 
 # cargo
-export PATH=$PATH:/home/zorin/.cargo/bin
+# export PATH=$PATH:/home/zorin/.cargo/bin:/home/zorin/.local/bin
 
 # source /opt/miniconda/etc/profile.d/conda.sh
 # conda activate py39
