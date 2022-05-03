@@ -50,6 +50,24 @@ chsh -s /usr/bin/zsh
 log "Installing themes"
 paru -S arc-gtk-theme arc-icon-theme papirus-icon-theme tela-icon-theme-git mcmojave-circle-icon-theme-git sweet-gtk-theme qt5ct lxappearance --noconfirm
 
+log "Installing fcitx5 themes"
+git clone https://github.com/tonyfettes/fcitx5-nord.git
+mkdir -p ~/.local/share/fcitx5/themes/
+cd fcitx5-nord
+cp -r Nord-Dark/ Nord-Light/ ~/.local/share/fcitx5/themes/
+
+git clone https://github.com/ayamir/fcitx5-gruvbox
+cd fcitx5-gruvbox
+cp -r Gruvbox-Light/ Gruvbox-Dark ~/.local/share/fcitx5/themes/
+
+log "Installing rEFind themes"
+mkdir -p /boot/efi/EFI/refind/themes
+cd /boot/efi/EFI/refind/themes
+sudo git clone https://github.com/evanpurkhiser/rEFInd-minimal
+sudo echo "include themes/rEFInd-minimal/theme.conf" >> /boot/efi/EFI/refind/refind.conf
+
+cd
+
 log "Installing fonts"
 paru -S otf-font-awesome ttf-dejavu ttf-nerd-fonts-symbols ttf-wps-fonts
 
