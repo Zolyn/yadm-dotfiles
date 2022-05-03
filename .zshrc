@@ -81,5 +81,6 @@ alias usl="systemctl suspend"
 # cargo
 export PATH=$PATH:/home/zorin/.cargo/bin
 
-source /opt/miniconda/etc/profile.d/conda.sh
+# source /opt/miniconda/etc/profile.d/conda.sh
 # conda activate py39
+### End of Zinit's installer chunk
