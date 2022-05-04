@@ -120,7 +120,7 @@ bindsym $mod+d --release exec --no-startup-id rofi -show drun
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # lock screen
-bindsym $mod+bracketleft --release exec bash ~/MyFiles/projects/dotfiles/i3lock/lock.sh
+bindsym $mod+bracketleft --release exec bash ~/MyFiles/scripts/lock.sh
 
 # powermenu
 bindsym $mod+bracketright --release exec bash ~/.config/polybar/scripts/powermenu.sh
