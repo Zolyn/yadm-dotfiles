@@ -2,6 +2,9 @@
 dir=$(dirname "$0")
 export PATH=$PATH:/home/zorin/.local/bin
 
+# Dual monitors
+xrandr --output DisplayPort-2 --primary --right-of HDMI-A-0
+
 nohup bash ~/MyFiles/projects/i3-video-wallpaper/setup.sh -a -n -w -b -f max -g 42x40 -p ~/视频/伊蕾娜_咖啡.mp4 > ~/log/vwp.out
 # nohup bash ~/MyFiles/projects/i3-video-wallpaper/setup.sh -a -n -w -b -p ~/视频/魔女之旅_贴贴.mp4 > ~/log/vwp.out &
 # nohup bash ~/MyFiles/projects/i3-video-wallpaper/setup.sh -p ~/视频/雪黎.mp4 -a -n -w -b -f max -g 64x64 > ~/log/vwp.out &

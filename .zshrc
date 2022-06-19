@@ -87,3 +87,8 @@ alias usl="systemctl suspend"
 # source /opt/miniconda/etc/profile.d/conda.sh
 # conda activate py39
 ### End of Zinit's installer chunk
+
+# pnpm
+export PNPM_HOME="/home/zorin/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
