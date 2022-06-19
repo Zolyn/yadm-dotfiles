@@ -81,7 +81,7 @@ paru -S otf-font-awesome ttf-dejavu ttf-nerd-fonts-symbols ttf-iosevka-nerd ttf-
 log "Installing GNOME polkit"
 paru -S polkit polkit-gnome --noconfirm
 
-log "Installing Nodejs development environment"
+log "Installing Nodejs"
 paru -S nodejs-lts-gallium npm pnpm yarn --noconfirm
 
 #log "Installing Apples San Francisco typeface family"
