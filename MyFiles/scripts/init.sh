@@ -7,7 +7,8 @@ HEADPHONE_MAC="0C:AE:BD:12:BE:C4"
 xrandr --output DisplayPort-2 --primary --right-of HDMI-A-0
 
 # Video Wallpaper
-nohup bash ~/MyFiles/projects/i3-video-wallpaper/setup.sh -a -n -w -b -f max -g 42x40 -p ~/视频/伊蕾娜_咖啡.mp4 > ~/log/vwp.out
+nohup bash ~/MyFiles/projects/i3-video-wallpaper/setup.sh -anwb ~/视频/yang_00000_1.mp4,32x32 ~/视频/伊蕾娜_咖啡.mp4 > ~/log/vwp.out
+# nohup bash ~/MyFiles/projects/i3-video-wallpaper/setup.sh -a -n -w -b -f max -g 42x40 -p ~/视频/伊蕾娜_咖啡.mp4 > ~/log/vwp.out
 # nohup bash ~/MyFiles/projects/i3-video-wallpaper/setup.sh -a -n -w -b -p ~/视频/魔女之旅_贴贴.mp4 > ~/log/vwp.out &
 # nohup bash ~/MyFiles/projects/i3-video-wallpaper/setup.sh -p ~/视频/雪黎.mp4 -a -n -w -b -f max -g 64x64 > ~/log/vwp.out &
 
