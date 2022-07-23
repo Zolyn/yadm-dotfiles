@@ -8,6 +8,7 @@ git config --global user.name "Zolyn"
 git config --global user.email "zorin1477@gmail.com"
 git config --global core.autocrlf input
 git config --global core.editor "code --wait"
+git config --global init.defaultBranch "main"
 
 log "Installing LightDM theme"
 paru -S lightdm-webkit-theme-osmos --noconfirm
