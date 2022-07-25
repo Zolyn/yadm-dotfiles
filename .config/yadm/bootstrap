@@ -69,7 +69,7 @@ git clone https://github.com/catppuccin/fcitx5.git
 cp -r ./fcitx5/Catppuccin ~/.local/share/fcitx5/themes
 
 log "Installing rEFind themes"
-mkdir -p /boot/efi/EFI/refind/themes
+sudo mkdir -p /boot/efi/EFI/refind/themes
 cd /boot/efi/EFI/refind/themes
 sudo git clone https://github.com/evanpurkhiser/rEFInd-minimal
 sudo echo "include themes/rEFInd-minimal/theme.conf" >> /boot/efi/EFI/refind/refind.conf
