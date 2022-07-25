@@ -1,0 +1,7 @@
+#!/bin/bash
+log() {
+  echo "[YADM:bootstrap] $1"
+}
+
+log "Configuring git"
+log "Done"
