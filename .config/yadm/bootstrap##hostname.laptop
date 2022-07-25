@@ -4,4 +4,91 @@ log() {
 }
 
 log "Configuring git"
+git config --global user.name "Zolyn"
+git config --global user.email "zorin1477@gmail.com"
+git config --global core.autocrlf input
+git config --global core.editor "code --wait"
+git config --global init.defaultBranch "main"
+
+log "Installing LightDM theme"
+paru -S lightdm-webkit-theme-osmos --noconfirm
+
+log "Setting up LightDM service"
+sudo systemctl enable lightdm
+
+log "Installing alacritty"
+paru -S alacritty --noconfirm
+
+log "Installing i3-gaps"
+paru -S i3-gaps i3lock-color --noconfirm
+
+log "Installing picom"
+paru -S picom-git --noconfirm
+
+log "Installing polybar"
+paru -S polybar --noconfirm
+
+log "Installing script dependencies"
+paru -S pkgfile pacman-contrib --noconfirm
+pkgfile --update
+
+paru -S playerctl python-dbus python-gobject gobject-introspection-runtime --noconfirm
+
+log "Installing rofi"
+paru -S rofi --noconfirm
+
+log "Installing zsh"
+paru -S zsh zsh-completions --noconfirm
+
+log "Installing autojump"
+paru -S autojump --noconfirm
+
+log "Installing Zinit"
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+
+log "Changing default shell"
+chsh -s /usr/bin/zsh
+
+log "Installing themes"
+paru -S arc-gtk-theme arc-icon-theme papirus-icon-theme tela-icon-theme-git mcmojave-circle-icon-theme-git sweet-gtk-theme qt5ct lxappearance --noconfirm
+
+log "Installing fcitx5 themes"
+cd ~/MyFiles
+git clone https://github.com/tonyfettes/fcitx5-nord.git
+mkdir -p ~/.local/share/fcitx5/themes/
+cd fcitx5-nord
+cp -r Nord-Dark/ Nord-Light/ ~/.local/share/fcitx5/themes/
+
+cd ~/MyFiles
+git clone https://github.com/ayamir/fcitx5-gruvbox
+cd fcitx5-gruvbox
+cp -r Gruvbox-Light/ Gruvbox-Dark ~/.local/share/fcitx5/themes/
+
+cd ~/MyFiles
+git clone https://github.com/catppuccin/fcitx5.git
+cp -r ./fcitx5/Catppuccin ~/.local/share/fcitx5/themes
+
+log "Installing rEFind themes"
+mkdir -p /boot/efi/EFI/refind/themes
+cd /boot/efi/EFI/refind/themes
+sudo git clone https://github.com/evanpurkhiser/rEFInd-minimal
+sudo echo "include themes/rEFInd-minimal/theme.conf" >> /boot/efi/EFI/refind/refind.conf
+
+cd
+
+log "Installing fonts"
+paru -S otf-font-awesome ttf-dejavu ttf-nerd-fonts-symbols ttf-iosevka-nerd ttf-wps-fonts --noconfirm
+
+log "Installing GNOME polkit"
+paru -S polkit polkit-gnome --noconfirm
+
+log "Installing Nodejs"
+paru -S nodejs-lts-gallium npm pnpm yarn --noconfirm
+
+#log "Installing Apples San Francisco typeface family"
+#paru -S otf-apple-sf-pro --noconfirm
+
+#log "Install deadd notification center"
+#paru -S deadd-notification-center-git --noconfirm
+
 log "Done"
