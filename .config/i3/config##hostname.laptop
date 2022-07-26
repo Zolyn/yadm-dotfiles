@@ -54,6 +54,7 @@ exec --no-startup-id picom -b --experimental-backends
 exec --no-startup-id ~/MyFiles/scripts/init.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id flameshot
+exec --no-startup-id variety
 exec --no-startup-id numlockx off
 
 # Utools
