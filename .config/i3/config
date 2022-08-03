@@ -55,6 +55,7 @@ exec --no-startup-id ~/MyFiles/scripts/init.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id flameshot
 exec --no-startup-id numlockx on
+exec --no-startup-id copyq
 
 # Gnome polkit
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
