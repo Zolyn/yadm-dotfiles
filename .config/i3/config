@@ -56,9 +56,6 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id flameshot
 exec --no-startup-id numlockx on
 
-# Utools
-for_window [class="utools"] floating enable
-
 # Gnome polkit
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 for_window [class="polkit-gnome-authentication-agent-1"] floating enable
@@ -75,6 +72,9 @@ bindsym $mod+x --release exec xkill
 # Remove title bar
 new_window none
 new_float none
+
+# CopyQ
+for_window [class="copyq"] floating enable
 
 # flameshot
 bindsym Print --release exec flameshot full
