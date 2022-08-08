@@ -53,10 +53,11 @@ zi wait lucid for \
     OMZP::safe-paste \
     OMZP::sudo \
     OMZP::web-search \
-    SukkaW/zsh-proxy \
     supercrabtree/k \
     joshskidmore/zsh-fzf-history-search \
     Aloxaf/fzf-tab
+
+# SukkaW/zsh-proxy
 
 bt_on() {
   bluetoothctl power on

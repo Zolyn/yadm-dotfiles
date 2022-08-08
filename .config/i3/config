@@ -77,6 +77,9 @@ new_float none
 # CopyQ
 for_window [class="copyq"] floating enable
 
+# OBS Studio
+for_window [class="obs"] floating enable
+
 # flameshot
 bindsym Print --release exec flameshot full
 
