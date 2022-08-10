@@ -49,7 +49,6 @@ zi wait lucid for \
     OMZP::extract \
     OMZP::git \
     OMZP::hitokoto \
-    OMZP::rust \
     OMZP::safe-paste \
     OMZP::sudo \
     OMZP::web-search \
@@ -57,7 +56,7 @@ zi wait lucid for \
     joshskidmore/zsh-fzf-history-search \
     Aloxaf/fzf-tab
 
-# SukkaW/zsh-proxy
+# SukkaW/zsh-proxy OMZP::rust
 
 bt_on() {
   bluetoothctl power on
