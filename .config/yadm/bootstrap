@@ -5,7 +5,7 @@ log() {
 
 log "Configuring git"
 git config --global user.name "Zolyn"
-git config --global user.email "zorin1477@gmail.com"
+git config --global user.email "zorin@zorin.icu"
 git config --global core.autocrlf input
 git config --global core.editor "code --wait"
 git config --global init.defaultBranch "main"
