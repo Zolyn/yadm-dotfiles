@@ -50,7 +50,7 @@ bindsym $mod+q --release kill
 
 # Applications at startup
 exec --no-startup-id fcitx5
-exec --no-startup-id picom -b --experimental-backends
+exec --no-startup-id picom -b
 exec --no-startup-id ~/MyFiles/scripts/init.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id flameshot
