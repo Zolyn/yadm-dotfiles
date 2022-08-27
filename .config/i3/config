@@ -75,6 +75,9 @@ bindsym $mod+x --release exec xkill
 new_window none
 new_float none
 
+# HMCL
+for_window [class="org.jackhuang.hmcl.Launcher"] floating enable
+
 # CopyQ
 for_window [class="copyq"] floating enable
 

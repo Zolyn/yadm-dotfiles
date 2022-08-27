@@ -77,7 +77,7 @@ sudo echo "include themes/rEFInd-minimal/theme.conf" >> /boot/efi/EFI/refind/ref
 cd
 
 log "Installing fonts"
-paru -S otf-font-awesome ttf-dejavu ttf-nerd-fonts-symbols ttf-iosevka-nerd ttf-wps-fonts --noconfirm
+paru -S otf-font-awesome ttf-apple-emoji ttf-dejavu ttf-nerd-fonts-symbols ttf-iosevka-nerd ttf-wps-fonts --noconfirm
 
 log "Installing GNOME polkit"
 paru -S polkit polkit-gnome --noconfirm
