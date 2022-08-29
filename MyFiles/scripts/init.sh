@@ -6,6 +6,9 @@ HEADPHONE_MAC="0C:AE:BD:12:BE:C4"
 # Dual monitors
 xrandr --output DisplayPort-2 --primary --right-of HDMI-A-0
 
+# Set mouse wheel speed
+nohup imwheel &
+
 # Video Wallpaper
 nohup bash ~/MyFiles/projects/i3-video-wallpaper/setup.sh -anwb ~/视频/yang_00000_1.mp4,32x32 ~/视频/伊蕾娜_咖啡.mp4 > ~/log/vwp.out
 # nohup bash ~/MyFiles/projects/i3-video-wallpaper/setup.sh -a -n -w -b -f max -g 42x40 -p ~/视频/伊蕾娜_咖啡.mp4 > ~/log/vwp.out

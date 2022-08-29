@@ -44,6 +44,8 @@ export FZF_DEFAULT_OPTS='--color=spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,h
 
 zi wait lucid for \
     OMZL::git.zsh \
+    OMZP::fnm \
+    OMZP::rust \
     OMZP::command-not-found \
     OMZP::cp \
     OMZP::extract \
@@ -56,7 +58,7 @@ zi wait lucid for \
     joshskidmore/zsh-fzf-history-search \
     Aloxaf/fzf-tab
 
-# SukkaW/zsh-proxy OMZP::rust
+# SukkaW/zsh-proxy
 
 bt_on() {
   bluetoothctl power on
@@ -102,3 +104,6 @@ alias usl="systemctl suspend"
 export PNPM_HOME="/home/zorin/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# fnm
+eval "$(fnm env --use-on-cd)"
