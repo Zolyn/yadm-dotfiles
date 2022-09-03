@@ -44,8 +44,10 @@ export FZF_DEFAULT_OPTS='--color=spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,h
 
 zi wait lucid for \
     OMZL::git.zsh \
-    OMZP::fnm \
+    OMZP::vscode \
     OMZP::rust \
+    OMZP::fnm \
+    OMZP::frontend-search \
     OMZP::command-not-found \
     OMZP::cp \
     OMZP::extract \
@@ -67,6 +69,14 @@ bt_on() {
 bt_off() {
   bluetoothctl power off
 }
+
+_auto_npx() {
+  if [[ -d node_modules ]]; then
+    export PATH=$PWD/node_modules/.bin:$PATH
+  fi
+}
+
+add-zsh-hook chpwd _auto_npx && _auto_npx
 
 alias cpuinfo='sudo cpupower -c all frequency-info'
 alias cpuperf='sudo cpupower -c all frequency-set -g performance'
@@ -106,4 +116,5 @@ export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
 # fnm
+export PATH=/home/zorin/.fnm:$PATH
 eval "$(fnm env --use-on-cd)"
