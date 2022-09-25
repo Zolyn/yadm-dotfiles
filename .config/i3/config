@@ -72,8 +72,8 @@ bindsym $mod+n --release exec kill -s USR1 $(pidof deadd-notification-center)
 bindsym $mod+x --release exec xkill
 
 # Remove title bar
-new_window none
-new_float none
+default_border none
+default_floating_border none
 
 # HMCL
 for_window [class="org.jackhuang.hmcl.Launcher"] floating enable

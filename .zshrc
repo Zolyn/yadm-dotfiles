@@ -38,6 +38,7 @@ zi wait lucid for \
 zi for \
     OMZL::history.zsh \
     OMZL::key-bindings.zsh \
+    OMZL::functions.zsh \
     OMZP::last-working-dir
 
 export FZF_DEFAULT_OPTS='--color=spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,header:#F28FAD,info:#DDB6F2,pointer:#F8BD96 --color=marker:#F8BD96,fg+:#F2CDCD,prompt:#DDB6F2,hl+:#F28FAD'
@@ -58,7 +59,8 @@ zi wait lucid for \
     OMZP::web-search \
     supercrabtree/k \
     joshskidmore/zsh-fzf-history-search \
-    Aloxaf/fzf-tab
+    Aloxaf/fzf-tab \
+    wfxr/forgit
 
 # SukkaW/zsh-proxy
 
@@ -118,3 +120,7 @@ export PATH="$PNPM_HOME:$PATH"
 # fnm
 export PATH=/home/zorin/.fnm:$PATH
 eval "$(fnm env --use-on-cd)"
+
+# howdy
+export OPENCV_LOG_LEVEL=0
+export OPENCV_VIDEOIO_PRIORITY_INTEL_MFX=0
