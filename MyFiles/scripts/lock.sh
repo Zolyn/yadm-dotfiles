@@ -21,3 +21,4 @@ i3lock \
  --wrong-size="$fontlg" \
  --modif-color="$transparent" \
  --modif-size="$fontlg"
+ --redraw-thread

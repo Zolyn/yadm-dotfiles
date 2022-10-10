@@ -110,6 +110,12 @@ for_window [class="Peek"] floating enable
 # QQ
 for_window [class="qq.exe"] floating enable
 
+# Icalingua
+for_window [class="icalingua"] move container to workspace 9;workspace 9
+
+# ncm
+for_window [class="netease-cloud-music"] move container to workspace 0;workspace 0
+
 # Wechat
 for_window [class="wechat.exe"] floating enable
 
