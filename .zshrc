@@ -26,21 +26,24 @@ zi ice as"command" from"gh-r" \
           atpull"%atclone" src"init.zsh"
 zi light starship/starship
 
-# Fast-syntax-highlighting & autosuggestions
-zi wait lucid for \
- atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
-    zdharma-continuum/fast-syntax-highlighting \
- blockf \
-    zsh-users/zsh-completions \
- atload"!_zsh_autosuggest_start" \
-    zsh-users/zsh-autosuggestions
+ZINIT[COMPINIT_OPTS]=-C;zicompinit
 
+# OMZ Libs required on startup
 zi for \
     OMZL::history.zsh \
     OMZL::key-bindings.zsh \
     OMZL::functions.zsh \
     OMZP::last-working-dir
 
+# Fast-syntax-highlighting & autosuggestions
+zi wait lucid for \
+    zdharma-continuum/fast-syntax-highlighting \
+ blockf \
+    zsh-users/zsh-completions \
+ atload"!_zsh_autosuggest_start" \
+    zsh-users/zsh-autosuggestions
+
+# fzf theme
 export FZF_DEFAULT_OPTS='--color=spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,header:#F28FAD,info:#DDB6F2,pointer:#F8BD96 --color=marker:#F8BD96,fg+:#F2CDCD,prompt:#DDB6F2,hl+:#F28FAD'
 
 zi wait lucid for \
@@ -60,7 +63,9 @@ zi wait lucid for \
     supercrabtree/k \
     joshskidmore/zsh-fzf-history-search \
     Aloxaf/fzf-tab \
-    wfxr/forgit
+    wfxr/forgit \
+    atload"zicdreplay" \
+    mellbourn/zabb
 
 # SukkaW/zsh-proxy
 
@@ -102,9 +107,6 @@ alias ypush="yadm push"
 # suspend
 alias usl="systemctl suspend"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
-
 # cargo
 # export PATH=$PATH:/home/zorin/.cargo/bin:/home/zorin/.local/bin
 
@@ -124,3 +126,6 @@ eval "$(fnm env --use-on-cd)"
 # howdy
 export OPENCV_LOG_LEVEL=0
 export OPENCV_VIDEOIO_PRIORITY_INTEL_MFX=0
+
+# zoxide
+eval "$(zoxide init zsh --hook pwd)"
