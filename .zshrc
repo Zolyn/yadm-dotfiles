@@ -97,6 +97,7 @@ alias ls='exa'
 alias l='exa'
 
 alias code='code --force-device-scale-factor=1.4'
+alias nl='na link'
 
 # yadm
 alias yst="yadm status"
@@ -108,7 +109,7 @@ alias ypush="yadm push"
 alias usl="systemctl suspend"
 
 # cargo
-# export PATH=$PATH:/home/zorin/.cargo/bin:/home/zorin/.local/bin
+export PATH=$PATH:/home/zorin/.cargo/bin:/home/zorin/.local/bin
 
 # source /opt/miniconda/etc/profile.d/conda.sh
 # conda activate py39
