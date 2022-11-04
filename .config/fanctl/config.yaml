@@ -1,0 +1,41 @@
+interval: 1000
+log_interval: 300
+inputs:
+  cpu_temp:
+    HwmonSensor:
+      hwmon: nct6798
+      label: TSI0_TEMP
+outputs:
+  fan1:
+    PwmFan:
+      path: /sys/class/hwmon/hwmon4
+      name: pwm1
+  fan2:
+    PwmFan:
+      path: /sys/class/hwmon/hwmon4
+      name: pwm2
+  fan3:
+    PwmFan:
+      path: /sys/class/hwmon/hwmon4
+      name: pwm3
+rules:
+  - outputs:
+      - fan1
+      - fan2
+      - fan3
+    rule:
+      Maximum:
+        - Static: 0.1
+        - Curve:
+            input: cpu_temp
+            keys:
+              - input: 0.0
+                output: 0.0
+              - input: 40.0
+                output: 0.1
+              - input: 65.0
+                output: 0.2
+              - input: 68.0
+                output: 0.5
+              - input: 75.0
+                output: 1.0
