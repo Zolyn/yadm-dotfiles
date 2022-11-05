@@ -25,17 +25,17 @@ rules:
       - fan3
     rule:
       Maximum:
-        - Static: 0.1
+        - Static: 0.3
         - Curve:
             input: cpu_temp
             keys:
               - input: 0.0
                 output: 0.0
               - input: 40.0
-                output: 0.1
+                output: 0.3
               - input: 65.0
-                output: 0.2
+                output: 0.4
               - input: 68.0
-                output: 0.5
+                output: 0.6
               - input: 75.0
                 output: 1.0

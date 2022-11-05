@@ -57,6 +57,7 @@ exec --no-startup-id flameshot
 exec --no-startup-id numlockx on
 exec --no-startup-id copyq
 exec --no-startup-id sudo amdfand
+exec --no-startup-id sudo fanctl --config ~/.config/fanctl/config.yaml
 
 # Gnome polkit
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -114,7 +115,7 @@ for_window [class="qq.exe"] floating enable
 for_window [class="icalingua"] move container to workspace 9;workspace 9
 
 # ncm
-for_window [class="netease-cloud-music"] move container to workspace 10;workspace 10
+for_window [class="netease-cloud-music"] move container to workspace 3;workspace 3
 
 # Wechat
 for_window [class="wechat.exe"] floating enable
