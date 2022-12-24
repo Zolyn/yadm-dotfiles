@@ -77,14 +77,6 @@ bt_off() {
   bluetoothctl power off
 }
 
-_auto_npx() {
-  if [[ -d node_modules ]]; then
-    export PATH=$PWD/node_modules/.bin:$PATH
-  fi
-}
-
-add-zsh-hook chpwd _auto_npx && _auto_npx
-
 alias cpuinfo='sudo cpupower -c all frequency-info'
 alias cpuperf='sudo cpupower -c all frequency-set -g performance'
 alias cpusave='sudo cpupower -c all frequency-set -g powersave'
@@ -102,8 +94,10 @@ alias nl='na link'
 # yadm
 alias yst="yadm status"
 alias ya="yadm add"
+alias yd="yadm diff"
 alias ycmsg="yadm commit -m"
 alias ypush="yadm push"
+alias z="cd"
 
 # suspend
 alias usl="systemctl suspend"
@@ -129,4 +123,7 @@ export OPENCV_LOG_LEVEL=0
 export OPENCV_VIDEOIO_PRIORITY_INTEL_MFX=0
 
 # zoxide
-eval "$(zoxide init zsh --hook pwd)"
+eval "$(zoxide init zsh --hook pwd --cmd cd)"
+
+# npx_bin_helper
+#eval "$(npx_bin_helper setup -s zsh)"

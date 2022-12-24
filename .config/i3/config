@@ -64,7 +64,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 for_window [class="polkit-gnome-authentication-agent-1"] floating enable
 
 # Edge
-bindsym $mod+c --release exec microsoft-edge-dev
+bindsym $mod+c --release exec microsoft-edge-stable
 
 # Notification center
 bindsym $mod+n --release exec kill -s USR1 $(pidof deadd-notification-center)
