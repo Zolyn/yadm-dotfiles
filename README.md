@@ -5,3 +5,4 @@ My configuration sets, powered by YADM.
 
 ## References
 - [prettyi3](https://github.com/aeghn/prettyi3)
+- [fcitx5-sogou-themes](https://github.com/sxqsfun/fcitx5-sogou-themes)
