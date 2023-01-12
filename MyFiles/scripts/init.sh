@@ -4,7 +4,7 @@ export PATH=$PATH:/home/zorin/.local/bin
 HEADPHONE_MAC="0C:AE:BD:12:BE:C4"
 
 # Dual monitors
-xrandr --output DisplayPort-2 --primary --right-of HDMI-A-0
+xrandr --output DisplayPort-0 --off --output DisplayPort-1 --off --output DisplayPort-2 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output HDMI-A-0 --mode 1920x1080 --pos 0x360 --rotate normal
 
 # Set mouse wheel speed
 nohup imwheel &

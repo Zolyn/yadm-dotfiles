@@ -66,6 +66,14 @@ for_window [class="polkit-gnome-authentication-agent-1"] floating enable
 # Edge
 bindsym $mod+c --release exec microsoft-edge-stable
 
+# Firefox
+bindsym $mod+Shift+c --release exec firefox-developer-edition
+
+# Universal Audio Control
+bindsym $mod+Mod1+d --release exec ~/.config/polybar/scripts/player-mpris-tail.py play-pause
+bindsym $mod+Mod1+e --release exec ~/.config/polybar/scripts/player-mpris-tail.py prev
+bindsym $mod+Mod1+c --release exec ~/.config/polybar/scripts/player-mpris-tail.py next
+
 # Notification center
 bindsym $mod+n --release exec kill -s USR1 $(pidof deadd-notification-center)
 
