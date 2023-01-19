@@ -63,11 +63,11 @@ exec --no-startup-id sudo fanctl --config ~/.config/fanctl/config.yaml
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 for_window [class="polkit-gnome-authentication-agent-1"] floating enable
 
-# Edge
-bindsym $mod+c --release exec microsoft-edge-stable
+# Chrome
+bindsym $mod+Shift+c --release exec google-chrome-stable
 
 # Firefox
-bindsym $mod+Shift+c --release exec firefox-developer-edition
+bindsym $mod+c --release exec firefox-developer-edition
 
 # Universal Audio Control
 bindsym $mod+Mod1+d --release exec ~/.config/polybar/scripts/player-mpris-tail.py play-pause
@@ -101,7 +101,7 @@ bindsym $mod+Print --release exec flameshot gui
 for_window [class="flameshot"] floating enable
 
 # Xdman
-for_window [class="xdman-Main"] floating enable
+for_window [class="xdm-app"] floating enable
 
 # Webstorm
 for_window [class="jetbrains-webstorm"] floating enable

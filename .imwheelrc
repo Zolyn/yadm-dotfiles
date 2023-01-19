@@ -2,7 +2,7 @@
 None, Up, Button4, 2
 None, Down, Button5, 2
 
-"^microsoft-edge"
+"^(microsoft-edge|google-chrome)"
 None, Up, Button4, 4
 None, Down, Button5, 4
 
